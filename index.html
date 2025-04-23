@@ -77,6 +77,42 @@
     .active {
       display: block;
     }
+    /* Νέοι στυλ για τα quiz κουμπιά */
+    .quiz-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      gap: 10px;
+    }
+    .quiz-button {
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 1.2em;
+      font-family: 'Comfortaa', cursive;
+      cursor: pointer;
+      text-align: center;
+      width: 100%;
+      font-weight: bold;
+      animation: flash 1.5s infinite;
+      text-decoration: none;
+      display: block;
+    }
+    .quiz1 {
+      background: linear-gradient(45deg, #ff0000, #ff6666);
+      border: 2px solid #ff0000;
+      color: white;
+    }
+    .quiz2 {
+      background: linear-gradient(45deg, #0066ff, #66a3ff);
+      border: 2px solid #0066ff;
+      color: white;
+    }
+    @keyframes flash {
+      0% { opacity: 1; }
+      50% { opacity: 0.7; }
+      100% { opacity: 1; }
+    }
   </style>
 </head>
 <body>
@@ -220,7 +256,7 @@
           <ul>
             <li>Οι Φαίακες φιλοξενούν τον Οδυσσέα με τιμές.</li>
             <li>Οι μνηστήρες, όμως, τρώνε και πίνουν στο σπίτι του <strong>χωρίς
-              σεβασμό</strong>, και στο τέλος τιμωρούνται.</li>
+              σεβασμός</strong>, και στο τέλος τιμωρούνται.</li>
           </ul>
           <p><strong>Μήνυμα:</strong> Ο σεβασμός προς τον ξένο δείχνει πολιτισμό και ανθρωπιά.</p>
         </div>
@@ -362,6 +398,12 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- Προσθήκη των νέων κουμπιών quiz στο τέλος της σελίδας -->
+  <div class="quiz-buttons">
+    <a href="https://pdomvros.github.io/odyssey-testfinal/" class="quiz-button quiz1">Quiz 1</a>
+    <a href="https://pdomvros.github.io/odyssey-testfinal2/" class="quiz-button quiz2">Quiz 2</a>
   </div>
 
   <script>
